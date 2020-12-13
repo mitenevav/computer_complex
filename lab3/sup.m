@@ -96,6 +96,8 @@ Xsolv2=[argmaxTol2-ive2,argmaxTol2+ive2]
 hold on
 
 scatter3(3.10000931e-01, -3.40962195e-08, 6.99982520e-02, 'm*');
+scatter3(0.1, 0.2, 0.3, 'b+');
+
 
 plot3([Xsolv2(1,1) Xsolv2(1,2)], [Xsolv2(2,1)  Xsolv2(2,1)], [Xsolv2(3,1) Xsolv2(3,1)], 'black');
 plot3([Xsolv2(1,1) Xsolv2(1,2)], [Xsolv2(2,2)  Xsolv2(2,2)], [Xsolv2(3,1) Xsolv2(3,1)], 'black');

@@ -393,7 +393,18 @@ def tolsolvty(infA, supA, infb, supb, plot=False, *varargin):
         # fig = plt.figure()
         # ax = fig.add_subplot(111, projection='3d')
         # ax.view_init(30, 100)
-        fig = go.Figure(data=[go.Surface(z=z, x=x, y=y)])
+        fig = go.Figure(data=[go.Surface(z=z,
+                                         x=x,
+                                         y=y,
+                                         contours={
+                                             "z": {"show": True,
+                                                   "project_z": True,
+                                                   "start": -20,
+                                                   "end": 10,
+                                                   "size": 2.5}
+                                         }
+                                         )]
+                        )
         # ax.plot([0], [-0.06], [z[100, 94]], markerfacecolor='c', markeredgecolor='c', marker='*', markersize=10)
         # print(z[100, 94])
         fig.update_layout(xaxis_title="X1",
